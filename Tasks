@@ -107,6 +107,42 @@ public class Paymentmethod {
 
 }
 
+A bank system should allow different account types to implement withdrawal rules differently.
+package NewPolymorphism;
+//Task No:6
+class savingAc{
+	String Name="ragu";
+	int Balance=1000 ;
+	void different() {
+		System.out.println("Saving Ac Minimum Balance be:"+Balance);
+		System.out.println("Current AcMinimum Balance be:"+0);
+	}
+	
+}
+class CurrentAc extends savingAc{
+	void different(int cost0) {
+		System.out.println("Current Ac Minimum Balance Nil"+cost0);
+		System.out.println("Accepted Saving Ac Minimum Balance Rs-1000..");
+		super.different();
+	}
+}
+
+
+
+
+public class Banktask {
+
+	public static void main(String[] args) {
+		savingAc d=new CurrentAc();
+		d.different();
+//		CurrentAc d1=new savingAc();
+//		d1.different(0);
+		
+
+	}
+
+}
+
 
 
 
