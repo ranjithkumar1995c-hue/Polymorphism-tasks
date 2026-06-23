@@ -77,6 +77,36 @@ class Splender extends vehicle{
 	}
 
 }
+A payment gateway should process payments through different methods such as UPI and credit card.
+
+package NewPolymorphism;
+//Task NO:5
+class payment{
+	int money=20000;
+	void transfer() {
+		System.out.println("payment Credit card loan"+money);
+	}}
+class UPI extends payment{
+	void transfer(int cost) {
+		System.out.println("Transfer to UPI transfer be"+cost);
+		System.out.println("Accepted creditcard loan details..");
+		super.transfer();
+	}
+	
+}
+	
+	
+
+public class Paymentmethod {
+
+	public static void main(String[] args) {
+     payment p=new UPI();
+     p.transfer();
+
+	}
+
+}
+
 
 
 
