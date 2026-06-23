@@ -24,14 +24,12 @@ public class Zootask {
 
 
 A calculator application should support adding two numbers or three numbers using the same method name.
-
 package NewPolymorphism;
 //Task No:1
 class calculator{
-	int a=20;
-	int b=30;
-	void calcul () {
-		System.out.println("two numbers adding method");
+	 
+	void calcul (int a,int b) {
+		System.out.println("two numbers adding method"+(a+b));
 		
 	}
 }
@@ -46,8 +44,8 @@ public class Calculatortask {
 
 	public static void main(String[] args) {
 	Calculatorss c= new Calculatorss();
-	c.calcul();
-	c.calcul("c=a*b");
+	c.calcul(10, 20);
+	
 	
 
 	}
@@ -55,5 +53,4 @@ public class Calculatortask {
 }
 
 
-}
 
