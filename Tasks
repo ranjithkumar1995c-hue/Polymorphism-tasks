@@ -51,6 +51,32 @@ public class Calculatortask {
 	}
 
 }
+A vehicle simulation should allow different vehicles to start differently using the same method.
+package NewPolymorphism;
+//Task No:4
+class vehicle{
+	String name="honda shine";
+	void CC125() {
+		System.out.println("honda shine Promote at 125cc");
+	}
+	
+}
+class Splender extends vehicle{
+	void CC125(String splender) {
+	System.out.println("Promote on 125cc"+splender);
+	
+}}
+
+   public class vehicletask {
+
+	public static void main(String[] args) {
+		Splender s =new Splender();
+		s.CC125();
+		s.CC125("Splender");
+
+	}
+
+}
 
 
 
