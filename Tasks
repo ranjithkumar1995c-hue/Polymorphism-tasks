@@ -1,1 +1,26 @@
+In a zoo simulation, animals produce different sounds using the same method.
+package NewPolymorphism;
+// Task no:3
+class Animal{
+	String animal="Lion";
+	void roar() {
+		System.out.println("Lion is roaring over the jungle");
+	}
+}
+class Lioness extends Animal{
+	void roar (String lioness) {
+		System.out.println("Lioness name is"+lioness);
+	}
+}
+
+public class Zootask {
+
+	public static void main(String[] args) {
+		Lioness l=new Lioness();
+		l.roar();
+		l.roar("Isa");
+
+	}
+
+}
 
