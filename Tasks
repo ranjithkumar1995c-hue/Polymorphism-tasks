@@ -143,6 +143,44 @@ public class Banktask {
 
 }
 
+A geometry program should compute the area for multiple shapes using methods with the same name.
+
+package NewPolymorphism;
+//Task No:2
+class Areatask{
+ int r=4;
+ float Area=(float)3.14*r*2;
+ float Circumference=(float)3.14*r*2;
+
+void area() {
+	System.out.println("The area of circle is:"+Area);
+	System.out.println("The circumference of circle is= "+Circumference);
+}}
+
+class rectangular extends Areatask{
+	void area(int L,int b) {
+		System.out.println("The Rectangular parameter is:"+(L*b) );
+		
+	}
+	                  
+}
+
+
+
+    public class Area {
+
+	public static void main(String[] args) {
+		rectangular r =new rectangular();
+		r.area(10, 40);
+		r.area();
+		
+		
+
+	}
+
+}
+
+
 
 
 
