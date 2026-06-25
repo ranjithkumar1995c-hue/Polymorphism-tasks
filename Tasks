@@ -208,8 +208,35 @@ class Drawing extends Shapestask {
 	}
 
 }
+A company system should allow employees to calculate salary differently.
 
+package NewPolymorphism;
+//Task No:8
 
+class employee{
+	int salary=10000;
+	String Name="ramu";
+	void salary() {
+		System.out.println("The employee salary Approved Manager"+salary);
+		
+	}}
+class manages extends employee{
+	void salary(int cost20000) {
+		System.out.println("The Manager Salary Approved MD"+cost20000);
+	}
+}
+
+public class Salarytask {
+
+	public static void main(String[] args) {
+		manages m =new manages();
+		m.salary();
+		m.salary(20000);
+		
+
+	}
+
+}
 
 
 
