@@ -180,6 +180,35 @@ class rectangular extends Areatask{
 
 }
 
+A graphics program should allow different shapes to implement a draw method.
+package NewPolymorphism;
+//Task No:7
+class Shapestask{
+	String Name="2D Drawing";
+	 int r=4;
+	 float Area=(float)3.14*r*2;
+	void draw () {
+		System.out.println("2D The area of circle is be"+Area);
+	}}
+class Drawing extends Shapestask {
+	void draw(int D) {
+		System.out.println("3D The area of circle is be"+D/2);
+	
+
+	}
+}
+	
+    public class Graphicstask {
+    public static void main(String[] args) {
+    	Drawing D=new Drawing();
+    	D.draw();
+    	D.draw(6);
+		
+
+	}
+
+}
+
 
 
 
