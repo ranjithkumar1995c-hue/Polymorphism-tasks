@@ -237,6 +237,38 @@ public class Salarytask {
 	}
 
 }
+A notification system should send messages using different channels such as email and SMS.
+
+package NewPolymorphism;
+//Task No:9
+class SMS{
+	String Name="Hi everyone attend meeting at 7pm";
+	String name="Email";
+	void channels() {
+		System.out.println("The channels approved sms be:"+Name);
+	}
+	}
+class Email extends SMS{
+	void channels (String Name) {
+		System.out.println("The channels approved  Email be:"+Name);
+		
+	}
+}
+
+
+
+
+
+public class Channelstask {
+public static void main(String[] args) {
+	Email e =new Email();
+	e.channels();
+	e.channels("Hi everyone attend meeting at 7pm");
+		
+
+	}
+
+}
 
 
 
