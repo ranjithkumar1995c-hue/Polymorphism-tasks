@@ -271,6 +271,7 @@ public static void main(String[] args) {
 }
 A shopping application should calculate discounts differently for different product types.
 
+
 package NewPolymorphism;
 //Task No:10;
 class Ac{
@@ -286,10 +287,10 @@ class Ac{
 	}}
 class fan extends Ac{
 	void Different(String name, String discount,String free,String Price) {
-		System.out.println("Vasanth&co Approved Festived Product Be:+name");
-		System.out.println("Vasanth&co Approved Festived Discount Be:+discount");
-		System.out.println("Vasanth&co Approved Festived free offer Be:+free");
-		System.out.println("Vasanth&co Approved Festived Price Be:+Price");
+		System.out.println("Vasanth&co Approved Festived Product Be:"+name);
+		System.out.println("Vasanth&co Approved Festived Discount Be:"+discount);
+		System.out.println("Vasanth&co Approved Festived free offer Be:"+free);
+		System.out.println("Vasanth&co Approved Festived Price Be:"+Price);
 		
 	}
 	
